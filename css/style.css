@@ -109,7 +109,7 @@ ul{
     margin-top: 16px;
 }
 
-#bio{
+.bio{
     min-width: 390px;
 }
 .code{
@@ -124,10 +124,10 @@ ul{
 
 
 /* texts in the landing page */
-#bio h3{
+.bio h3{
     font-size: 50px;
 }
-#bio h1{
+.bio h1{
 font-size: 60px;
 font-weight: 700;
 }
@@ -340,6 +340,9 @@ background-size: cover;
 contact information */
 #contact{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
     gap: 60px;
 }
 
