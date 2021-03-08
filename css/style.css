@@ -257,6 +257,7 @@ hover when someone hovers on each div */
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .p-tab{
@@ -264,7 +265,7 @@ hover when someone hovers on each div */
     height: 200px; */
     position: relative;
 }
-.p-tab > div{
+.p-tab  div{
 position: relative;
 font-size: 35px;
 font-weight: 700;
@@ -273,7 +274,7 @@ width: 100%;
 height: 100%;
 border-radius: 20px;
 }
-.p-tab > div > p{
+.p-tab  div  p{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -353,6 +354,7 @@ contact information */
     padding: 20px;
     max-height: 390px;
 }
+
 .social-icons{
     background-color: #252D40;
     color: #6A69F5;
@@ -445,12 +447,15 @@ footer ul li{
 
 /* 
 media queries */
-@media (max-width:500px){
+@media (max-width:375px){
+    body{
+        font-size: 14px;
+    }
      
 
     .container1{
-        margin-right:10%;
-        margin-left: 10%;
+        margin-right:20px;
+        margin-left: 20px;
     }
 
 
@@ -474,10 +479,28 @@ ul{
     gap: 20px;
     width: 200px;
 }
+.bio{
+    min-width: 330px;
+}
+
+.bio h3{
+    font-size: 45px;
+}
+.bio h1{
+font-size: 55px;
+text-align: center;
+}
+
+.my-image-container{
+    min-width: 330px;
+    min-height: 330px;
+    background-color:#6A69F5 ;
+    box-shadow:3px 6px 26px #6969f548 ;
+}
 
 #footer-nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* gap: 50px; */
     font-size: 16px;
 }
@@ -517,7 +540,12 @@ hover when someone hovers on each div */
     margin-top: -350px;
 }
 .writings{
-    width: 100%;
+    width: 330px;
+    word-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 
@@ -536,7 +564,7 @@ hover when someone hovers on each div */
 .p-tab{
     margin-bottom: 60px;
 }
-.p-tab > div{
+.p-tab  div{
 position: absolute;
 font-size: 35px;
 font-weight: 700;
@@ -561,8 +589,11 @@ border-radius: 20px;
     visibility: hidden;
 }
 .rev-text{
-    margin-left: -70px;
+    margin-left: -250px;
+    margin-bottom: 20px;
 }
+
+
 
 
 
@@ -578,7 +609,7 @@ contact information */
 #socials{
     background-color: white;
     color: #707070;
-    min-width: 300px;
+    min-width: 330px;
     padding: 20px;
     max-height: 390px;
 }
@@ -598,6 +629,199 @@ input, .full{
     margin-bottom: 20px;
 }
 
+
+
+
+}
+
+/*working on a media query for tablets*/
+
+@media (min-width:376px)and (max-width:768px){
+
+
+body{
+        font-size: 16px;
+    }
+     
+
+    .container1{
+        margin-right:10%;
+        margin-left: 10%;
+        overflow: hidden;
+    }
+
+    /* starting with the haeader */
+header{
+    flex-direction: column;
+    gap: 60px;
+    
+}
+
+header ul li{
+    display: block;
+}
+header h3{
+    font-size: 40px;
+}
+
+ul{
+    flex-direction: column;
+    text-align: right;
+    gap: 20px;
+    width: 200px;
+}
+
+
+/*working on the footer*/
+.bio{
+    min-width: 100%;
+}
+
+.bio h3{
+    font-size: 50px;
+}
+.bio h1{
+font-size: 60px;
+text-align: center;
+}
+
+.my-image-container{
+    min-width: 330px;
+    min-height: 330px;
+    background-color:#6A69F5 ;
+    box-shadow:3px 6px 26px #6969f548 ;
+    margin-left: auto;
+}
+
+/*working on the foooter nav*/
+#footer-nav{
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
+    font-size: 16px;
+}
+
+/*
+working on my techlist*/
+
+#techlist{
+    overflow: hidden;
+}
+
+#techlist div{
+    margin: 16px;
+    min-height:100px;
+    min-width: 100px;
+    background-position: center;
+    background-size: cover;
+}
+/* 
+hover when someone hovers on each div */
+
+#techlist div:hover{
+    min-height:120px;
+    min-width: 120px;
+}
+
+/* image on the about top */
+
+#about-image{
+    visibility: hidden;
+    
+}
+
+/** about section */
+#about{
+    margin-top: -380px;
+}
+.writings{
+    width: 100%;
+    word-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+
+/* my projects section */
+#projects #bio{
+    margin-top: 120px;
+}
+
+/* project cards */
+#project-div{
+    flex-direction: column;
+}
+
+.p-tab{
+    margin-bottom: 60px;
+}
+.p-tab  div{
+position: absolute;
+font-size: 35px;
+font-weight: 700;
+background-color: #373636b7;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+}
+.p-tab > div > p{
+    /* position: relative; */
+    margin-top: -0px;
+   z-index: 50;
+    
+}
+
+
+
+/* reference section */
+
+.rev-image{
+    visibility: hidden;
+}
+.rev-text{
+    margin-left: -90px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* contact forms */
+/* 
+contact information */
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+#socials{
+    background-color: white;
+    color: #707070;
+    min-width: 330px;
+    padding: 20px;
+    max-height: 390px;
+}
+
+h5{
+    font-weight: 700;
+}
+
+
+/* forms */
+
+
+input, .full{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 
 
