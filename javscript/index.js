@@ -7,5 +7,13 @@ $(
        splash.css({
            "display": "hidden"
        })
+
+
+    //    working on the toggle button
+    const togglebutton = document.getElementById('menu-icon');
+    const navlist = document.getElementsByClassName('navlist')[0];
+    togglebutton.addEventListener('click',()=>{
+        navlist.classList.toggle('active')
+    })
     }
 )
